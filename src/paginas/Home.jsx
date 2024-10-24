@@ -4,10 +4,12 @@ import { Link } from 'react-router-dom';
 function Home() {
     return (
         <>
-            <h1>Bienvenido/a</h1>
-            <Link to={'/projects'}>Projects</Link>
-            <p> </p>
-            <Link to={'/resume'}>Resume</Link>
+            <div className="main">
+                <h1>Bienvenido/a</h1>
+                <Link to={'/projects'}>Projects</Link>
+                <p> </p>
+                <Link to={'/resume'}>Resume</Link>
+            </div>
         </>
     )
 }

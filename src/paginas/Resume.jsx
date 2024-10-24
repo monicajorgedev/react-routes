@@ -2,12 +2,10 @@ import React, {useState, useEffect} from "react";
 import { Link } from 'react-router-dom';
 import {studies, experiences} from '../data/resume.js'
 
-console.log(studies)
-console.log(experiences)
-
 function Resume() {
     return (
         <>
+        <div className="main">
             <Link to={'/'}>Home</Link>
             <h1>Resume</h1>
             <div className="container">
@@ -37,7 +35,8 @@ function Resume() {
                         )
                     })}
                 </div>
-             </div>
+            </div>
+        </div>
         </>
     )
 }

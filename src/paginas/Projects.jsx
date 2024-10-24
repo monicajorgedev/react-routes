@@ -1,4 +1,3 @@
-import './Projects.css'
 import React, {useState, useEffect} from "react";
 import { Link } from 'react-router-dom';
 import projects from "../data/projects.js";
@@ -6,6 +5,7 @@ import projects from "../data/projects.js";
 function Projects() {
     return (
         <>
+        <div className="main">
             <Link to={'/'}>Home</Link>
             <h1>Projects</h1>
             <div className="container">
@@ -21,6 +21,7 @@ function Projects() {
                 )
              })}
              </div>
+        </div>
         </>
     )
 }
