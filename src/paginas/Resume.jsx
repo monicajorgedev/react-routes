@@ -1,39 +1,38 @@
-import React, {useState, useEffect} from "react";
-import { Link } from 'react-router-dom';
 import {studies, experiences} from '../data/resume.js'
 
 function Resume() {
     return (
         <>
         <div className="main">
-            <Link to={'/'}>Home</Link>
             <h1>Resume</h1>
             <div className="container">
                 <div>
                     <h2>Studies</h2>
+                    <ul>
                     {studies.map((study)=> {
                         return (
-                        <ul key={study.id}>
-                            <li>ID: {study.id}</li>
-                            <li>title: {study.title}</li>
-                            <li>institución: {study.institucion}</li>
-                            <li>date: {study.date}</li>
-                        </ul>
+                        <li key={study.id}>
+                            <h2>title: {study.title}</h2>
+                            <p>institución: {study.institucion}</p>
+                            <p>date: {study.date}</p>
+                        </li>
                         )
                     })}
+                    </ul>
                 </div>
                 <div>
                     <h2>Experiences</h2>
+                    <ul>
                     {experiences.map((experience)=> {
                         return (
-                        <ul key={experience.id}>
-                            <li>ID: {experience.id}</li>
-                            <li>title: {experience.title}</li>
-                            <li>company: {experience.institucion}</li>
-                            <li>date: {experience.date}</li>
-                        </ul>
+                        <li key={experience.id}>
+                            <p>title: {experience.title}</p>
+                            <p>company: {experience.institucion}</p>
+                            <p>date: {experience.date}</p>
+                        </li>
                         )
                     })}
+                    </ul>
                 </div>
             </div>
         </div>

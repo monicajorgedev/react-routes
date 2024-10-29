@@ -32,19 +32,26 @@
   .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+    
+    
+  }
+
+  nav {
+    display: flex;
+    gap: 20px;
   }
 
   ul {
     display: flex;
-    flex-direction: column;
-    border: 1px grey solid;
-    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
   }
 
   li {
+    border: 1px grey solid;
     list-style: none;
+    padding: 20px;
 
   }
 
